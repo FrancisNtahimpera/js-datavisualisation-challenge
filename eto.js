@@ -2,6 +2,8 @@
 var referenceNode = document.getElementsByTagName("h4")[2];
 var divGraph2 = document.createElement("canvas");
 divGraph2.setAttribute("id", "graph2");
+divGraph2.setAttribute("width", "200px");
+divGraph2.setAttribute("height", "200px");
 
 referenceNode.after(divGraph2);
 
@@ -42,12 +44,12 @@ var data = {
   datasets: [
     {
       label: "2007",
-      backgroundColor: "rgba(255, 0, 0, 0.4)",
+      backgroundColor: "rgb(63, 183, 141)",
       data: homicide2007,
     },
     {
       label: "2010",
-      backgroundColor: "rgba(0, 0, 255, 0.4)",
+      backgroundColor: "rgb(215, 241, 113)",
       data: homicide2010,
     },
   ],
